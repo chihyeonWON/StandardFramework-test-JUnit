@@ -54,7 +54,7 @@ public class MyVectorTest {
 		String str2 = new String("def");
 		v.addElement(str1);
 		v.addElement(str2);
-		assertEquals(1, v.indexof(str2));
+		assertEquals(1, v.indexOf(str2));
 		System.out.println("testIndexOf 수행");
 	}
 
