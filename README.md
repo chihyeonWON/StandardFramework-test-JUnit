@@ -296,3 +296,17 @@ public class MyStackTest {
 JUnit 실행 결과는 다음과 같다.
 
 ![JUnit MyStackTest](https://user-images.githubusercontent.com/58906858/179664417-d9ca8ff0-cc6d-4c6a-979f-e456d15b93d8.png)
+
+## 테스트 스위트 작성
+
+MyVectorTest와 MyStackTest 두 개의 테스트 케이스를 실행하기 위해서는 각각의 클래스를 실행해야 한다. 테스트 케이스마다 별도로 테스트를 수행한다면 한 패키지와 모듈 단위로 테스트하거나 테스트를 자동화하는 것이 어려워진다. 
+
+프로젝트를 수행하다 보면 테스트 케이스 하나씩 실행하기보다는 패키지 단위로 컴포넌트 단위로 묶어서 테스트해야 하는 경우가 많다. 이런 경우 테스트 스위트 (Test Suite)를 만들어 한 번에 수행할 수 있다. 
+
+테스트 케이스가 있는 패키지를 선택하고 New -> Other -> Java -> JUnit -> JUnit Test Suite를 선택하여 테스트 스위트를 만든다.
+스위트에 포함하고 싶은 테스트 케이스를 선택하여 포함한다.
+
+이렇게 하면 자동으로 코드가 생성되고 추가 코드 없이 바로 실행된다. 생성된 AllTests 클래스를 선택한 후 Run As -> JUnit Test를 수행하면 다음과 같다.
+![JUnit 테스트 스위트](https://user-images.githubusercontent.com/58906858/179665148-1c937a53-b2de-4f2f-bcf4-da1303555b0c.png)
+
+이렇게 생성된 코드는 한 번만 실행하면 되고 엔트나 메이븐으로 자동화하기도 간편하다.
